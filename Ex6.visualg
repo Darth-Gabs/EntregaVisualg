@@ -1,0 +1,30 @@
+algoritmo "Ex6"
+
+var
+  op: caractere
+  i, j, resultado: inteiro
+inicio
+  escreval("Deseja exibir a tabuada de 1 a 10 (S/N): ")
+  leia(op)
+
+  se (op = "S") ou (op = "s") entao
+    para i  de 1 ate 10 faca
+      escreval("=== TABUADA DE ", i, " ===")
+      para j de 1 ate 10 faca
+        resultado <- i * j
+        escreval(i, "x", j, "=", resultado)
+      fimpara
+
+    fimpara
+
+  senao
+    se (op = "N") ou (op = "n") entao
+      escreval("Encerrado")
+    senao
+      escreval("Opção inválida")
+    fimse
+  fimse
+
+
+
+fimalgoritmo
