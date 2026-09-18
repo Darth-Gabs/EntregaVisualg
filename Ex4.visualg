@@ -1,0 +1,17 @@
+algoritmo "Ex4"
+
+var
+  m: real
+  a: real
+  f: real
+
+inicio
+
+  escreval("Digite a massa: ")
+  leia(m)
+  escreval("Digite a aceleração: ")
+  leia(a)
+  f <- (m * a)
+  escreval("A força é de ", f, " newtons")
+
+fimalgoritmo

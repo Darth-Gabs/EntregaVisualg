@@ -1,0 +1,15 @@
+algoritmo "Ex2"
+
+var
+  nome: caractere
+  sobrenome: caractere
+
+inicio
+
+  escreval("Digite seu nome: ")
+  leia(nome)
+  escreval("Digite seu sobrenome: ")
+  leia(sobrenome)
+  escreval("Olá, ", nome," ", sobrenome)
+
+fimalgoritmo

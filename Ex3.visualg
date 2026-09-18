@@ -1,0 +1,17 @@
+algoritmo "Ex3"
+
+var
+  n1: real
+  n2: real
+  media: real
+
+inicio
+
+  escreval("Digite primeiro numero: ")
+  leia(n1)
+  escreval("Digite segundo numero: ")
+  leia(n2)
+  media <- (n1 + n2) / 2
+  escreval("A média é ", media)
+
+fimalgoritmo
