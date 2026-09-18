@@ -1,0 +1,14 @@
+algoritmo "Ex7"
+
+var
+  base, expoente, resultado: inteiro
+inicio
+  escreval("Digite a base: ")
+  leia(base)
+  escreval("Digite o exponente: ")
+  leia(expoente)
+
+  resultado <- base ^ expoente
+  escreva(resultado)
+
+fimalgoritmo
