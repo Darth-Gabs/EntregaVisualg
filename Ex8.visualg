@@ -1,0 +1,56 @@
+algoritmo "JogoAdivinhacao"
+
+var
+   pchave, dica, tentativa: caractere
+   palpite1, contTentativas: inteiro
+
+inicio
+   // --- VEZ DO JOGADOR 1 ---
+   escreval("=== JOGADOR 1 ===")
+   escreva("Digite a palavra-chave: ")
+   leia(pchave)
+   
+   escreva("Em quantas tentativas você acha que o Jogador 2 vai acertar? ")
+   leia(palpite1)
+   
+   escreva("Digite uma dica para a palavra-chave: ")
+   leia(dica)
+   
+   limpatela
+
+   escreval("=== JOGADOR 2 ===")
+   escreval("Dica: ", dica)
+   escreval("")
+   
+   contTentativas <- 0
+   
+   repita
+      escreva("Digite seu palpite para a palavra-chave: ")
+      leia(tentativa)
+      contTentativas <- contTentativas + 1
+      
+      se (tentativa <> pchave) entao
+         escreval("Errado! Tente novamente.")
+         escreval("")
+      fimse
+   ate (tentativa = pchave)
+
+   escreval("")
+   escreval("====================================")
+   escreval("Parabéns! Você acertou a palavra: ", pchave)
+   escreval("Total de tentativas utilizadas: ", contTentativas)
+   escreval("Palpite do Jogador 1: ", palpite1)
+   escreval("====================================")
+   escreval("")
+
+   se (contTentativas < palpite1) entao
+      escreval("JOGADOR 2 VENCEU! (Acertou em menos tentativas do que o previsto)")
+   senao
+      se (contTentativas = palpite1) entao
+         escreval("JOGADOR 1 VENCEU! (O Jogador 2 acertou exatamente na quantidade prevista)")
+      senao
+         escreval("EMPATE! (O Jogador 2 precisou de mais tentativas do que o previsto)")
+      fimse
+   fimse
+
+fimalgoritmo
