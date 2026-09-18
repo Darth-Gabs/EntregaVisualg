@@ -1,0 +1,33 @@
+algoritmo "Ex5"
+
+var
+  quantidade, i: inteiro
+  numero, soma, media: real
+inicio
+
+  soma <- 0
+
+
+  escreval("Digite o total de números para fazer a média: ")
+  leia(quantidade)
+
+  para i de 1 ate quantidade faca
+    escreval("Digite o", i, " º número: ")
+    leia(numero)
+
+    soma <- soma + numero
+
+  fimpara
+
+  se quantidade > 0 entao
+    media <- soma / quantidade
+    escreva(media)
+  senao
+    escreva("Quantidade inválida")
+  fimse
+
+
+
+
+
+fimalgoritmo
